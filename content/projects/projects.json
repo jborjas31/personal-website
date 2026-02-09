@@ -1,0 +1,21 @@
+[
+  {
+    "slug": "assembly-line",
+    "title": "Assembly Line",
+    "type": "Web Game",
+    "thumbClass": "game",
+    "thumbLabel": "Interactive Simulation",
+    "description": "An interactive simulation that teaches bottleneck identification, throughput optimization, cycle time, defect propagation, and line balancing through hands-on gameplay.",
+    "tags": ["Industrial Engineering", "Simulation", "React"]
+  },
+  {
+    "slug": "ideal-me",
+    "title": "Ideal Me",
+    "type": "Web App",
+    "thumbClass": "app",
+    "thumbLabel": "Productivity Tool",
+    "description": "A personal productivity app that creates a digital simulation of your ideal productive self — an accountability system built around task completion and time management.",
+    "tags": ["Productivity", "React", "Supabase"],
+    "url": "https://ideal-me-hazel.vercel.app/"
+  }
+]
