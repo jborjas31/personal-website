@@ -9,6 +9,9 @@
   --color-border: #e8e8e4;
   --color-accent: #2a5a3a;
   --color-accent-light: #e8f0eb;
+  --color-defect: #c0392b;
+  --color-blocked: #d4a017;
+  --color-starved: #bbbbbb;
   --font-sans: 'DM Sans', sans-serif;
   --font-serif: 'Newsreader', Georgia, serif;
 }
@@ -124,4 +127,23 @@ body {
 .prose pre code {
   background: none;
   padding: 0;
+}
+
+/* Game animations */
+@keyframes stationPulse {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(42, 90, 58, 0.15); }
+  50% { box-shadow: 0 0 0 4px rgba(42, 90, 58, 0.1); }
+}
+
+.station-pulse {
+  animation: stationPulse 1.5s ease-in-out infinite;
+}
+
+@keyframes slideUp {
+  from { opacity: 0; transform: translateY(16px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+input[type="range"] {
+  accent-color: var(--color-accent);
 }

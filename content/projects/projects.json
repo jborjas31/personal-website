@@ -6,7 +6,8 @@
     "thumbClass": "game",
     "thumbLabel": "Interactive Simulation",
     "description": "An interactive simulation that teaches bottleneck identification, throughput optimization, cycle time, defect propagation, and line balancing through hands-on gameplay.",
-    "tags": ["Industrial Engineering", "Simulation", "React"]
+    "tags": ["Industrial Engineering", "Simulation", "React"],
+    "url": "/game"
   },
   {
     "slug": "ideal-me",

@@ -12,8 +12,11 @@ export default function Projects() {
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {projects.map((project) => {
-            const CardTag = project.url ? "a" : Link;
-            const cardProps = project.url
+            const isInternal = project.url?.startsWith("/");
+            const CardTag = isInternal ? Link : project.url ? "a" : Link;
+            const cardProps = isInternal
+              ? { href: project.url! }
+              : project.url
               ? { href: project.url, target: "_blank", rel: "noopener noreferrer" }
               : { href: `/projects/${project.slug}` };
             return (
